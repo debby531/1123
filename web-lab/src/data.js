@@ -2,7 +2,7 @@
 // C1 初學者只改這裡，就能看到畫面熱更新，不需要碰 React 元件與動畫背景。
 
 export const brand = {
-  name: 'GYOZA WOOD',
+  name: '宵夜鍋貼屋',
   badge: 'GYOZA SHOP GAME',
   tagline: '接手一家鍋貼店遊戲，用 AI 補完它，再做出自己的 Skill、MCP 與 AI Agent。',
   description:
