@@ -1,9 +1,21 @@
 {
-  "//": "專案層 MCP 設定。用 Claude Code 打開這個資料夾時會問你是否啟用；啟用後輸入 /mcp 應該看到 chrome-devtools。它讓 AI 能自己打開 http://localhost:5180、操作遊戲、讀 console、截圖。",
+  "//": "專案層 MCP 設定。用 Claude Code 打開這個資料夾時會問你是否啟用；啟用後輸入 /mcp 應該看到 chrome-devtools 和 memory。chrome-devtools 讓 AI 能自己打開 http://localhost:5180、操作遊戲、讀 console、截圖。版本號固定（不用 @latest），避免每次自動抓到不同版本；--isolated 用獨立的暫時 Chrome profile，不動到你平常登入的瀏覽器；--allowedUrlPattern 限制只能連本機遊戲網址，避免不小心連到其他網站。memory 是 Anthropic 官方的知識圖譜記憶伺服器，讓 AI 能跨對話記住事情；版本固定在 2026.8.31（本機 Node 20 能跑的最後一版，之後的 2.x 版要求 Node 24+，之後可以升級 Node 再換回最新版）；記憶檔存在使用者家目錄（不在專案裡、不會進 git）。",
   "mcpServers": {
     "chrome-devtools": {
       "command": "npx",
-      "args": ["chrome-devtools-mcp@latest"]
+      "args": [
+        "chrome-devtools-mcp@1.13.0",
+        "--isolated",
+        "--allowedUrlPattern",
+        "http://localhost:5180/*"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory@2026.8.31"],
+      "env": {
+        "MEMORY_FILE_PATH": "/Users/liuzhiting/.claude/mcp-memory/ai-course-gyoza-game.jsonl"
+      }
     }
   }
 }

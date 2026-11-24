@@ -1,0 +1,11 @@
+{
+  "name": "v6：全面酸辣湯取代紅茶試探（延續v3第2天單日試探，改測全5天＋沿用缺貨補量修正）",
+  "pack": "official",
+  "days": [
+    { "items": [ { "name": "招牌鍋貼", "qty": 10, "price": 70 }, { "name": "韭菜鍋貼", "qty": 6, "price": 70 }, { "name": "酸辣湯", "qty": 11, "price": 35 } ], "promoCost": 0 },
+    { "items": [ { "name": "招牌鍋貼", "qty": 9, "price": 70 }, { "name": "韭菜鍋貼", "qty": 5, "price": 70 }, { "name": "玉米鍋貼", "qty": 4, "price": 80 }, { "name": "酸辣湯", "qty": 11, "price": 35 } ], "promoCost": 0 },
+    { "items": [ { "name": "招牌鍋貼", "qty": 29, "price": 70 }, { "name": "韭菜鍋貼", "qty": 8, "price": 70 }, { "name": "酸辣湯", "qty": 13, "price": 35 } ], "promoCost": 0 },
+    { "items": [ { "name": "招牌鍋貼", "qty": 13, "price": 70 }, { "name": "韭菜鍋貼", "qty": 7, "price": 70 }, { "name": "玉米鍋貼", "qty": 6, "price": 80 }, { "name": "酸辣湯", "qty": 12, "price": 35 } ], "promoCost": 0 },
+    { "items": [ { "name": "招牌鍋貼", "qty": 11, "price": 70 }, { "name": "韭菜鍋貼", "qty": 6, "price": 70 }, { "name": "玉米鍋貼", "qty": 14, "price": 80 }, { "name": "酸辣湯", "qty": 11, "price": 35 } ], "promoCost": 0 }
+  ]
+}
